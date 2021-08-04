@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+:root {
+	--board-size: 95vmin;
+	--item-size: calc(var(--board-size) /  50);
+	--char-size: calc(var(--board-size) /  25);
+}
+
+* {
+	font-family: 'Ruslan Display', cursive;
+}
+
+body {
+	margin-top: 20px;
+	margin-left: 0px;
+	background-color: rgb(239, 214, 1);
+	width:100vw;
+	height:95vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:white;
+	overflow:hidden;
+}
+
+#intro{
+	background-color: lightblue;
+	font-size: 25px;
+}
+
+.border {
+	border:solid 5px rgb(100,100,100);
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;	
+	padding: 20px;
+	gap:10px;
+}
+
+#instructions{
+	
+	border:solid 10px rgb(100,100,100);
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;	
+	padding: 50px;
+	gap:10px;
+
+}
+
+.details
+{
+	font-size: 25px;
+}
+
+#board {
+	
+	background-color:lightgreen;
+	top:20;
+	left:0;
+	width: 98vw;
+	height:96vh;
+	position:relative;
+}
+
+#player, #item, .obstacle {
+	font-size:var(--item-size);
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:1em;
+	height:1em;
+	font-family:monospace;
+	opacity: 1;
+	color:black;
+}
+
+#player, .obstacle, #item {
+	font-size:100px;
+}
+
+.hide{
+	display:none !important;
+	
+}
+
+#road{
+	background-color:black;
+	top: 40px;
+	width: 98vw;
+	height: 16vh;
+	position:relative;
+	
+}
+
+#road2{
+	background-color:black;
+	top: 60px;
+	width: 98vw;
+	height: 16vh;
+	position:relative;
+	
+}
+
+#road3{
+	background-color:black;
+	top: 80px;
+	width: 98vw;
+	height: 16vh;
+	position:relative;
+	
+}
+
+#road4{
+	background-color:black;
+	top: 100px;
+	width: 98vw;
+	height: 16vh;
+	position:relative;
+	
+}
+
+#road5{
+	background-color:black;
+	top: 120px;
+	width: 98vw;
+	height: 16vh;
+	position:relative;
+	
+}
